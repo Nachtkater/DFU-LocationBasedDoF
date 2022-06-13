@@ -1,0 +1,75 @@
+{
+    "Version": "0.1.1",
+    "Sections": [
+        {
+            "Name": "InteriorDoF",
+            "Description": null,
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Min": 1.0,
+                    "Max": 100.0,
+                    "Value": 1.5,
+                    "Name": "interiorFocusDistance",
+                    "Description": "Interior Focus Distance",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 1.0,
+                    "Max": 32.0,
+                    "Value": 20.0,
+                    "Name": "interiorAperture",
+                    "Description": "Interior Aperture",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 1,
+                    "Max": 300,
+                    "Value": 70,
+                    "Name": "interiorFocalLength",
+                    "Description": "Interior Focal Length",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "ExteriorDoF",
+            "Description": "Introduces tweakable dungeon lighting, and random ambient lighting",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Min": 1.0,
+                    "Max": 100.0,
+                    "Value": 65.0,
+                    "Name": "exteriorFocusDistance",
+                    "Description": "Exterior Focus Distance",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 1.0,
+                    "Max": 32.0,
+                    "Value": 6.5,
+                    "Name": "exteriorAperture",
+                    "Description": "Exterior Aperture",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 1,
+                    "Max": 300,
+                    "Value": 250,
+                    "Name": "exteriorFocalLength",
+                    "Description": "Exterior Focal Length",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                }
+            ],
+            "$version": "v1"
+        }
+    ]
+}
