@@ -140,6 +140,35 @@
                 }
             ],
             "$version": "v1"
+        },
+        {
+            "Name": "PlayerLightAuto",
+            "Description": "Toggles for player light",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Value": true,
+                    "Name": "autoSwitch",
+                    "Description": "Automates lantern/torch/none un-/equipping",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                },
+                {
+                    "Value": true,
+                    "Name": "autoRefill",
+                    "Description": "Keeps light source condition in flickering state >0..3",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                },
+                {
+                    "Value": true,
+                    "Name": "autoGive",
+                    "Description": "Gives the player torch and lantern if missing",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                }
+            ],
+            "$version": "v1"
         }
     ]
 }

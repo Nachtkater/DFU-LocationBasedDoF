@@ -25,7 +25,7 @@
         "name": "Lantern",
         "baseWeight": 1,
         "hitPoints": 100,
-        "capacityOrTarget": 35,
+        "capacityOrTarget": 50,
         "basePrice": 40,
         "enchantmentPoints": 600,
         "rarity": 3,
