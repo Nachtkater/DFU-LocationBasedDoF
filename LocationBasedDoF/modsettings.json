@@ -3,7 +3,7 @@
     "Sections": [
         {
             "Name": "InteriorDoF",
-            "Description": null,
+            "Description": "Depth of field settings inside",
             "IsAdvanced": false,
             "Keys": [
                 {
@@ -27,7 +27,7 @@
                 {
                     "Min": 1,
                     "Max": 300,
-                    "Value": 70,
+                    "Value": 65,
                     "Name": "interiorFocalLength",
                     "Description": "Interior Focal Length",
                     "$version": "v1",
@@ -38,13 +38,13 @@
         },
         {
             "Name": "ExteriorDoF",
-            "Description": "Introduces tweakable dungeon lighting, and random ambient lighting",
+            "Description": "Depth of field settings outside",
             "IsAdvanced": false,
             "Keys": [
                 {
                     "Min": 1.0,
                     "Max": 100.0,
-                    "Value": 65.0,
+                    "Value": 50.0,
                     "Name": "exteriorFocusDistance",
                     "Description": "Exterior Focus Distance",
                     "$version": "v1",
@@ -53,7 +53,7 @@
                 {
                     "Min": 1.0,
                     "Max": 32.0,
-                    "Value": 6.5,
+                    "Value": 10.0,
                     "Name": "exteriorAperture",
                     "Description": "Exterior Aperture",
                     "$version": "v1",
@@ -62,11 +62,81 @@
                 {
                     "Min": 1,
                     "Max": 300,
-                    "Value": 250,
+                    "Value": 270,
                     "Name": "exteriorFocalLength",
                     "Description": "Exterior Focal Length",
                     "$version": "v1",
                     "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "BloomInLight",
+            "Description": "Bloom settings in bright environments",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Min": 1.0,
+                    "Max": 50.0,
+                    "Value": 20.0,
+                    "Name": "lightIntensity",
+                    "Description": "Intensity in bright environments",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.1,
+                    "Max": 10.0,
+                    "Value": 1.0,
+                    "Name": "lightThreshold",
+                    "Description": "Threshold in bright environments",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 1.0,
+                    "Max": 10.0,
+                    "Value": 4.0,
+                    "Name": "lightDiffusion",
+                    "Description": "Diffusion in bright environments",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "BloomInDark",
+            "Description": "Bloom settings in dark environments",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Min": 1.0,
+                    "Max": 50.0,
+                    "Value": 10.0,
+                    "Name": "darkIntensity",
+                    "Description": "Intensity in dark environments",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.1,
+                    "Max": 10.0,
+                    "Value": 0.2,
+                    "Name": "darkThreshold",
+                    "Description": "Threshold in dark environments",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 1.0,
+                    "Max": 10.0,
+                    "Value": 5.0,
+                    "Name": "darkDiffusion",
+                    "Description": "Diffusion in dark environments",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
                 }
             ],
             "$version": "v1"
